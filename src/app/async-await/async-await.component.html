@@ -1,0 +1,27 @@
+<div class="container my-3">
+  <h2>Async/Await</h2>
+  <div class="row">
+    <h5>When we use async keyword before function then it always return a promise</h5>
+  </div>
+
+  <button type="button" class="btn btn-primary mt-3" (click)="brandAvailable()">Check Laptop Brand Available</button>
+
+  <table class="table table-striped table-bordered mt-4" *ngIf="showBrand">
+    <thead>
+      <tr>
+        <th scope="col">Brand</th>
+        <th scope="col">Color</th>
+        <th scope="col">Price</th>
+        <th scope="col">Available</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{showBrand.brand}}</th>
+        <td>{{showBrand.color}}</td>
+        <td>{{showBrand.price}}</td>
+        <td>{{showBrand.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

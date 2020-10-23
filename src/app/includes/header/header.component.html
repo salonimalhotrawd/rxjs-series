@@ -2,12 +2,21 @@
   <a class="navbar-brand" href="#">Observable & Promises</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
+
       <li class="nav-item">
         <a [routerLink]="['../promise']" aria-expanded="false" routerLinkActive="menu-active"
-         [routerLinkActiveOptions]="{exact:true}">
-            Promise
+          [routerLinkActiveOptions]="{exact:true}">
+          Promise
         </a>
       </li>
+
+      <li class="nav-item">
+        <a class="ml-3" [routerLink]="['../async-await']" aria-expanded="false" routerLinkActive="menu-active"
+          [routerLinkActiveOptions]="{exact:true}">
+          Async/Await
+        </a>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link ml-3" href="#">Observable</a>
       </li>
