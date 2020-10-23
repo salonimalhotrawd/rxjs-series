@@ -83,6 +83,7 @@ export class AsyncAwaitComponent implements OnInit {
   //Ex:03 - With Fetch API - By Using async/await
   public async fetchDatabyAPI() {
     this.fetchData = [];
+    this.toggle('showFetchData');
     this.initializeFetchData();
     this.fetchData = await this.fetchAPIUser;
     this.toggle();
