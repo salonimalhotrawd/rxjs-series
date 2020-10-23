@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 20%;
+  padding: 30px;
+  margin: 1rem;
+  background-color: #f4511e;
+  border: 1px solid #c5b3b9;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.3s;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.box:hover {opacity: 1}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
