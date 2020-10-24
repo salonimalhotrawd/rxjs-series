@@ -15,7 +15,7 @@ export class ListComponent implements OnInit {
     { 'id': 3 , 'observableName': 'of and from', 'routerName': 'of-from'},
     { 'id': 4 , 'observableName': 'toArray', 'routerName': 'toArray'},
     { 'id': 5 , 'observableName': 'Custom Observable', 'routerName': 'custom'},
-    { 'id': 6 , 'observableName': 'From Event', 'routerName': 'from-event'},
+    { 'id': 6 , 'observableName': 'Map', 'routerName': 'map'},
     { 'id': 7 , 'observableName': 'From Event', 'routerName': 'from-event'}
   ];
 
