@@ -1,0 +1,40 @@
+<div class="my-3">
+  <h2>Pluck</h2>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex-01</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Pluck</strong>'User' + data
+      </p>
+      <br>
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let data of pluckData">
+          <td>{{data}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+      <strong>Ex-02</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Pluck</strong> Pluck Data by Nested Property
+      </p>
+      <br>
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Job -> profile</th>
+        </tr>
+        <tr *ngFor="let data of pluckDataByNestedProp">
+          <td>{{data}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

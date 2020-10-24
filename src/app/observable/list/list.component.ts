@@ -16,7 +16,7 @@ export class ListComponent implements OnInit {
     { 'id': 4 , 'observableName': 'toArray', 'routerName': 'toArray'},
     { 'id': 5 , 'observableName': 'Custom Observable', 'routerName': 'custom'},
     { 'id': 6 , 'observableName': 'Map', 'routerName': 'map'},
-    { 'id': 7 , 'observableName': 'From Event', 'routerName': 'from-event'}
+    { 'id': 7 , 'observableName': 'Pluck', 'routerName': 'pluck'}
   ];
 
   ngOnInit() {
