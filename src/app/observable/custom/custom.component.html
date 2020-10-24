@@ -14,11 +14,9 @@
     <div class="col-md-6">
       <strong>Ex-02 (Custom Interval Observable)</strong>
       <hr>
-      <ul class="techList">
-        <li>Angular</li>
-        <li>Typescript</li>
-        <li>Html and CSS</li>
-      </ul>
+      <ul id="elCustomContainer" class="techList"
+      [ngClass]="customtechStatus == 'Completed' ? 'completed' :
+       customtechStatus == 'error' ? 'error' : ''"></ul>
     </div>
   </div>
   <br>
@@ -27,11 +25,14 @@
       <strong>Ex -03 (Random Names)</strong>
       <hr>
       <p class="bg-light py-2 px-3 border rounded">
-        <strong>Random Names:</strong> of('Saloni', 'Anmol' , 'Sansha', 'Ronku')
+        <strong>Random Names:</strong> ('Saloni', 'Anmol' , 'Sansha', 'Ronku')
       </p>
       <hr>
-      <p>Current Name: <strong class="text-success">Saloni</strong></p>
-      <span class="badge badge-success" style="">Success</span>
+      <p>Current Name: <strong class="text-success">{{showRandomName}}</strong></p>
+      <span class="badge"
+       [ngClass]="randomtechStatus == 'Completed' ? 'badge-success' : randomtechStatus == 'error' ? 'badge-error' : 'badge-primary'">
+        {{ randomtechStatus == 'Completed' ? 'Completed' : randomtechStatus == 'error' ? 'Error' : 'Running'}}
+      </span>
     </div>
   </div>
 </div>
