@@ -1,0 +1,84 @@
+<div class="my-3">
+  <h2>of and From</h2>
+  <span>
+    of converts the arguement into observable Sequence <b>of(1,2,3)</b>
+  </span>
+  <br>
+  <span>
+    from Creates an Observable from an Array, an array-like object,
+    a Promise, an iterable object, or an Observable-like object <b>from([1,2,3])</b>
+  </span>
+  <br>
+  <strong>Ex:01 (OF)</strong>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>String</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> of('Saloni', 'Malhotra' , 'Developer')
+      </p>
+      <hr>
+      <ul id="elContainer"></ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Object</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> of(&#123;firstName:'Saloni', lastName:'Malhotra' , profile:'Developer';&#123;)
+      </p>
+      <hr>
+      <ul>
+        <li>FirstName: {{showUser.firstName}}</li>
+        <li>LastName: {{showUser.lastName}}</li>
+        <li>Profile: {{showUser.profile}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Array</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> of(['Saloni','Malhotra','Developer'])
+      </p>
+      <hr>
+      <ul id="elContainerOfArray"></ul>
+    </div>
+  </div>
+
+  <strong>Ex:02 (FROM)</strong>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Array</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> of(['Saloni', 'Malhotra' , 'Developer'])
+      </p>
+      <hr>
+      <ul id="elContainerArray"></ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Promise</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> Promise to resolved
+      </p>
+      <hr>
+      <ul id="elContainerPromise"></ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>String</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data:</strong> String to observable
+      </p>
+      <hr>
+      <ul id="elContainerString"></ul>
+    </div>
+  </div>
+</div>
