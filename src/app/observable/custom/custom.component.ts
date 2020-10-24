@@ -10,7 +10,12 @@ import { DesignUtilityService } from './../../services/design-utility.service';
 export class CustomComponent implements OnInit, OnDestroy {
 
   public techStatus;
+  public customtechStatus;
+  public randomtechStatus;
+  public showRandomName;
+
   public apiCallSubscription: Subscription[] = [];
+
   constructor(private _designUtilityService: DesignUtilityService) { }
 
   ngOnInit() {
@@ -31,12 +36,11 @@ export class CustomComponent implements OnInit, OnDestroy {
 
       setTimeout(() => {
         Observer.next('Javascript');
-        //Observer.error(new Error('Limit Exceed'));
+        Observer.complete();
       }, 4000);
 
       setTimeout(() => {
         Observer.next('Jquery');
-        Observer.complete();
       }, 5000);
     });
 
@@ -48,7 +52,52 @@ export class CustomComponent implements OnInit, OnDestroy {
       this.techStatus = 'Completed';
     });
 
-    this.apiCallSubscription.push(manualObsSub);
+    // Ex-02 Custom
+    const techList = ['Angular', 'Typescript', 'Html & Css', 'Javascript', 'Jquery'];
+    let count = 0;
+    const customObs = Observable.create(Observer => {
+      setInterval(() => {
+        Observer.next(techList[count]);
+        if (count === 3) {
+          Observer.error(new Error('Unavailable Tech Stack'));
+        }
+        if (count === 4) {
+          Observer.complete();
+        }
+        count++;
+      }, 1000);
+    });
+
+    const customObsSub = customObs.subscribe(res => {
+      this._designUtilityService.appendElement(res, 'elCustomContainer');
+      }, (err) => {
+          this.customtechStatus = 'error';
+      }, () => {
+        this.customtechStatus = 'Completed';
+      });
+
+    // Ex-03 Random Names
+    const randomNames = ['Saloni', 'Anmol' , 'Sansha', 'Ronku'];
+    let randomCount = 0;
+    const randomNamesObs = Observable.create(observer => {
+       setInterval(() => {
+         observer.next(randomNames[randomCount]);
+         if (count === 4) {
+           observer.complete();
+         }
+         randomCount++;
+       }, 1000);
+    });
+
+    const randomNamesObsSub = randomNamesObs.subscribe(res => {
+        this.showRandomName = res;
+    }, (error) => {
+      this.randomtechStatus = 'error';
+    }, () => {
+      this.randomtechStatus = 'Completed';
+    });
+
+    this.apiCallSubscription.push(manualObsSub, customObsSub, randomNamesObsSub);
   }
 
   ngOnDestroy(): void {
