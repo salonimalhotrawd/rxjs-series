@@ -11,7 +11,7 @@ export class ListComponent implements OnInit {
 
   public ObservableList = [
     { 'id': 1 , 'observableName': 'From Event', 'routerName': 'from-event'},
-    { 'id': 2 , 'observableName': 'From Event', 'routerName': 'from-event'},
+    { 'id': 2 , 'observableName': 'Interval/Timer', 'routerName': 'interval-timer'},
     { 'id': 3 , 'observableName': 'From Event', 'routerName': 'from-event'},
     { 'id': 4 , 'observableName': 'From Event', 'routerName': 'from-event'},
     { 'id': 5 , 'observableName': 'From Event', 'routerName': 'from-event'},
