@@ -16,7 +16,8 @@ export class ListComponent implements OnInit {
     { 'id': 4 , 'observableName': 'toArray', 'routerName': 'toArray'},
     { 'id': 5 , 'observableName': 'Custom Observable', 'routerName': 'custom'},
     { 'id': 6 , 'observableName': 'Map', 'routerName': 'map'},
-    { 'id': 7 , 'observableName': 'Pluck', 'routerName': 'pluck'}
+    { 'id': 7 , 'observableName': 'Pluck', 'routerName': 'pluck'},
+    { 'id': 7 , 'observableName': 'Filter', 'routerName': 'filter'}
   ];
 
   ngOnInit() {
@@ -26,5 +27,4 @@ export class ListComponent implements OnInit {
     const url = '../observable/' + event;
     this._router.navigate([url]);
   }
-
 }
