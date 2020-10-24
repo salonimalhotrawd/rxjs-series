@@ -9,7 +9,7 @@ import { DesignUtilityService } from './../../services/design-utility.service';
 })
 export class FromEventComponent implements OnInit, AfterViewInit {
 
-   @ViewChild('addBtn', {static: false}) public addBtn: ElementRef;
+  @ViewChild('addBtn', {static: false}) public addBtn: ElementRef;
   constructor(private _designUtilityService: DesignUtilityService) { }
 
   ngOnInit() {
@@ -24,4 +24,4 @@ export class FromEventComponent implements OnInit, AfterViewInit {
       });
   }
 
-}
+ }
