@@ -1,22 +1,9 @@
-<div class="row mt-2 ml-2">
+<div class="row mt-2">
   <div class="clearfix col-md-12">
-    <div class="box">
-      <span>Observable 1</span>
+    <ng-template ngFor let-list [ngForOf]="ObservableList" let-index="index">
+     <div class="box" (click)="navigateToRoute(list.routerName)">
+        <span>{{list.observableName}}</span>
       </div>
-      <div class="box">
-        <span>Observable 2</span>
-      </div>
-      <div class="box">
-        <span>Observable 3</span>
-      </div>
-      <div class="box">
-          <span>Observable 4</span>
-        </div>
-        <div class="box">
-          <span>Observable 5</span>
-        </div>
-        <div class="box">
-          <span>Observable 6</span>
-        </div>
+    </ng-template>
   </div>
 </div>
