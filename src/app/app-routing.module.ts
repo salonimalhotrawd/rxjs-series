@@ -17,6 +17,7 @@ import { FilterComponent } from './observable/filter/filter.component';
 import { TapComponent } from './observable/tap/tap.component';
 import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
+import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -35,7 +36,8 @@ const routes: Routes = [
         { path: 'filter', component: FilterComponent },
         { path: 'tap', component: TapComponent },
         { path: 'take', component: TakeComponent },
-        { path: 'retry', component: RetryComponent}
+        { path: 'retry', component: RetryComponent},
+        { path: 'debounceTime', component: DebouncetimeComponent}
       ]
   },
   { path: '**', redirectTo: 'promise' }
