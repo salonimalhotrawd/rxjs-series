@@ -13,6 +13,22 @@ ul.techList li {
   margin-bottom: 10px;
 }
 
+ul.userList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+ul.userList li {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 7px 13px;
+  margin-bottom: 10px;
+}
+
 ul.techList.error li {
   color:red;
   background-color: rgba(255,0,0,0.08);

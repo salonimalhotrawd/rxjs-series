@@ -17,6 +17,7 @@ import { MapComponent } from './observable/map/map.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TapComponent } from './observable/tap/tap.component';
+import { TakeComponent } from './observable/take/take.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { TapComponent } from './observable/tap/tap.component';
     MapComponent,
     PluckComponent,
     FilterComponent,
-    TapComponent
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,
