@@ -20,7 +20,8 @@ export class ListComponent implements OnInit {
     { 'id': 8 , 'observableName': 'Filter', 'routerName': 'filter'},
     { 'id': 9 , 'observableName': 'Take, TakeLast and TakeUntil', 'routerName': 'take'},
     { 'id': 10 , 'observableName': 'Retry, RetryWhen Scan and Delay', 'routerName': 'retry'},
-    { 'id': 11 , 'observableName': 'DebounceTime & DistinctUntilChanged', 'routerName': 'debounceTime'}
+    { 'id': 11 , 'observableName': 'DebounceTime & DistinctUntilChanged', 'routerName': 'debounceTime'},
+    { 'id': 12 , 'observableName': 'Subject & BehaviourSubject', 'routerName': 'subject'}
   ];
 
   ngOnInit() {
