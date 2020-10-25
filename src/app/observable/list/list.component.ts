@@ -19,7 +19,8 @@ export class ListComponent implements OnInit {
     { 'id': 7 , 'observableName': 'Pluck', 'routerName': 'pluck'},
     { 'id': 8 , 'observableName': 'Filter', 'routerName': 'filter'},
     { 'id': 9 , 'observableName': 'Take, TakeLast and TakeUntil', 'routerName': 'take'},
-    { 'id': 10 , 'observableName': 'Retry, RetryWhen Scan and Delay', 'routerName': 'retry'}
+    { 'id': 10 , 'observableName': 'Retry, RetryWhen Scan and Delay', 'routerName': 'retry'},
+    { 'id': 11 , 'observableName': 'DebounceTime & DistinctUntilChanged', 'routerName': 'debounceTime'}
   ];
 
   ngOnInit() {
