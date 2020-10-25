@@ -17,7 +17,8 @@ export class ListComponent implements OnInit {
     { 'id': 5 , 'observableName': 'Custom Observable', 'routerName': 'custom'},
     { 'id': 6 , 'observableName': 'Map', 'routerName': 'map'},
     { 'id': 7 , 'observableName': 'Pluck', 'routerName': 'pluck'},
-    { 'id': 7 , 'observableName': 'Filter', 'routerName': 'filter'}
+    { 'id': 7 , 'observableName': 'Filter', 'routerName': 'filter'},
+    { 'id': 7 , 'observableName': 'Tap', 'routerName': 'tap'}
   ];
 
   ngOnInit() {

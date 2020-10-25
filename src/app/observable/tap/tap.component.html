@@ -1,0 +1,88 @@
+<div class="my-3" [ngStyle]="{'color': myColor}">
+  <h2>Tap</h2>
+  <span>Perform a side effect for every emission on the source Observable, but return an Observable that is identical to
+    the source.</span>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Map</th>
+          <th>Tap</th>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              The purpose of <b>map</b> is to <b>transform</b> the emitted values of the observable
+            </span>
+          </td>
+          <td>
+            <span>
+              The purpose of tap is to <b>execute an action</b> keeping the same value of the observable
+            </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span>
+              <b>Map</b> is for transformation/mapping of the Data in the "pipe". Some data comes in,
+              different/transformed data comes out.
+            </span>
+          </td>
+          <td>
+            <span>
+              <b>Tap</b> should be Used for Notification, logging non-contextual/critical side effects.
+            </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            const source = of(1, 2, 3, 4, 5);
+            <br>
+            <br>
+            const example = source.pipe(map(val => val + 100));
+            <br>
+            <br>
+            // output: 101, 102, 103, 104, 105
+            <br>
+            const subscribe = example.subscribe(val => console.log(val));
+          </td>
+          <td>
+            <span>
+              const source = of(1, 2, 3, 4, 5);
+              <br>
+              <br>
+              // here we are manipulating the input value but the output value of the observable still the same
+              <br>
+              const example = source.pipe(
+              tap(val => val + 100),
+              );
+              <br>
+              <br>
+              // output: 1, 2, 3, 4, 5
+              <br>
+              const subscribe = example.subscribe(val => console.log(val));
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex -01</strong>
+      <hr>
+      <ul id="elContainer"></ul>
+    </div>
+
+    <div class="col-md-6">
+      <strong>Ex -02</strong>
+      <hr>
+      <ul id="elContainer2"></ul>
+    </div>
+  </div>
+</div>
