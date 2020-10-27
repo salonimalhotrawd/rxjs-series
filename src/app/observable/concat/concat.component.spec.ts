@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ConcatComponent } from './concat.component';
 
-describe('ConcatMergeComponent', () => {
+describe('ConcatComponent', () => {
   let component: ConcatComponent;
   let fixture: ComponentFixture<ConcatComponent>;
 
