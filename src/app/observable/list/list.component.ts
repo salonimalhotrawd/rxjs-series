@@ -26,6 +26,7 @@ export class ListComponent implements OnInit {
     { 'id': 14 , 'observableName': 'Async Subject', 'routerName': 'async-subject'},
     { 'id': 15 , 'observableName': 'Concat', 'routerName': 'concat'},
     { 'id': 16 , 'observableName': 'Merge', 'routerName': 'merge'},
+    { 'id': 17 , 'observableName': 'MergeMap', 'routerName': 'mergemap'},
   ];
 
   ngOnInit() {

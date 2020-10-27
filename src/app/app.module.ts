@@ -30,6 +30,8 @@ import { ReplaySubjectComponent } from './observable/replay-subject/replay-subje
 import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
 import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
+import { MergemapComponent } from './observable/mergemap/mergemap.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +60,8 @@ import { MergeComponent } from './observable/merge/merge.component';
     ReplaySubjectComponent,
     AsyncSubjectComponent,
     ConcatComponent,
-    MergeComponent
+    MergeComponent,
+    MergemapComponent
   ],
   imports: [
     BrowserModule,
