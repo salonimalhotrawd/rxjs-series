@@ -1,0 +1,34 @@
+<div class="my-3">
+  <h2>Async Subject</h2>
+  <br>
+  <div class="row">
+    <div class="col">
+      <h3>Add User</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <input type="text" class="form-control" #userName>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="addUser(userName.value)">Add User</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>User-01</strong>
+      <hr>
+      <ul class="video-list">
+        <li><strong>User:</strong>&nbsp;{{showLastEmittedValue}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Click to Complete</strong>
+      <hr>
+      <button class="btn btn-success" (click)="onComplete()">Complete Subscription</button>
+    </div>
+  </div>
+</div>

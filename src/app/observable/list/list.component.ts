@@ -22,7 +22,8 @@ export class ListComponent implements OnInit {
     { 'id': 10 , 'observableName': 'Retry, RetryWhen Scan and Delay', 'routerName': 'retry'},
     { 'id': 11 , 'observableName': 'DebounceTime & DistinctUntilChanged', 'routerName': 'debounceTime'},
     { 'id': 12 , 'observableName': 'Subject & BehaviourSubject', 'routerName': 'subject'},
-    { 'id': 13 , 'observableName': 'Replay Subject', 'routerName': 'replay'}
+    { 'id': 13 , 'observableName': 'Replay Subject', 'routerName': 'replay-subject'},
+    { 'id': 14 , 'observableName': 'Async Subject', 'routerName': 'async-subject'}
   ];
 
   ngOnInit() {
