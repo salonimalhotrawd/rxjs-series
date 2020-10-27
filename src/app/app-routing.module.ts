@@ -21,6 +21,8 @@ import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.co
 import { SubjectComponent } from './observable/subject/subject.component';
 import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
+import { ConcatComponent } from './observable/concat/concat.component';
+import { MergeComponent } from './observable/merge/merge.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -43,7 +45,9 @@ const routes: Routes = [
         { path: 'debounceTime', component: DebouncetimeComponent},
         { path: 'subject', component: SubjectComponent},
         { path: 'replay-subject', component: ReplaySubjectComponent},
-        { path: 'async-subject', component: AsyncSubjectComponent}
+        { path: 'async-subject', component: AsyncSubjectComponent},
+        { path: 'concat', component: ConcatComponent},
+        { path: 'merge', component: MergeComponent}
       ]
   },
   { path: '**', redirectTo: 'promise' }

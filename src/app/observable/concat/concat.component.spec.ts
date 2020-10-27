@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConcatMergeComponent } from './concat-merge.component';
+import { ConcatComponent } from './concat.component';
 
 describe('ConcatMergeComponent', () => {
-  let component: ConcatMergeComponent;
-  let fixture: ComponentFixture<ConcatMergeComponent>;
+  let component: ConcatComponent;
+  let fixture: ComponentFixture<ConcatComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConcatMergeComponent ]
+      declarations: [ ConcatComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConcatMergeComponent);
+    fixture = TestBed.createComponent(ConcatComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
