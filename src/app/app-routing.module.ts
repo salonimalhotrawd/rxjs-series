@@ -24,6 +24,7 @@ import { AsyncSubjectComponent } from './observable/async-subject/async-subject.
 import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
 import { MergemapComponent } from './observable/mergemap/mergemap.component';
+import { ShareReplayComponent } from './observable/share-replay/share-replay.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -49,7 +50,8 @@ const routes: Routes = [
         { path: 'async-subject', component: AsyncSubjectComponent},
         { path: 'concat', component: ConcatComponent},
         { path: 'merge', component: MergeComponent},
-        { path: 'mergemap', component: MergemapComponent}
+        { path: 'mergemap', component: MergemapComponent},
+        { path: 'share-replay', component: ShareReplayComponent}
       ]
   },
   { path: '**', redirectTo: 'promise' }

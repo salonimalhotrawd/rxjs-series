@@ -1,0 +1,69 @@
+<div class="my-2">
+  <h2>ShareReplay</h2>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <strong>User: With Salary 86000</strong>
+      <br>
+      <hr>
+      <table class="table table-bordered table-stripped">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Salary</th>
+        </tr>
+        <tr *ngFor="let fetch of (particularUser1 | async)">
+            <th scope="row">{{fetch.id}}</th>
+            <td>{{fetch.employee_name}}</td>
+            <td>{{fetch.employee_age}}</td>
+            <td>Rs.&nbsp;{{fetch.employee_salary}}</td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="col-md-6">
+      <strong>User: With Salary 320800</strong>
+      <br>
+      <hr>
+      <table class="table table-bordered table-stripped">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Salary</th>
+        </tr>
+        <tr *ngFor="let fetch of (particularUser2 | async)">
+            <th scope="row">{{fetch.id}}</th>
+            <td>{{fetch.employee_name}}</td>
+            <td>{{fetch.employee_age}}</td>
+            <td>Rs.&nbsp;{{fetch.employee_salary}}</td>
+        </tr>
+    </table>
+    </div>
+   </div>
+  <br>
+  <hr>
+  <div class="row">
+    <strong>All Users</strong>
+    <hr>
+    <br>
+    <div class="clearfix user-data col-md-12">
+      <table class="table table-bordered table-stripped">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+          </tr>
+          <tr *ngFor="let fetch of (allUsers | async)?.data">
+              <th scope="row">{{fetch.id}}</th>
+              <td>{{fetch.employee_name}}</td>
+              <td>{{fetch.employee_age}}</td>
+              <td>Rs.&nbsp;{{fetch.employee_salary}}</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>
